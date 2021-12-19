@@ -26,8 +26,8 @@ function fetchMovies(size) {
 
             trendingMovies.innerHTML +=
               `
-                <div class="row d-flex justify-content-center m-5 filme-box">
-                    <div class="col text-center mb-3">
+                <div class="row d-flex justify-content-center m-3 filme-box">
+                    <div class=" col-sm col-md-3 text-center mb-3">
                         <img src="` + POSTER_URL + val.poster_path + `" alt="">
                     </div>
                     <div class="col text-start">
