@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* {
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -28,8 +28,13 @@ header {
 .nav-link {
     padding: 0px 20px;
     text-decoration: none;
+    font-size: 1.5em;
     font-family: "Poppins", sans-serif;
-    color: white !important;
+    color: #fff !important;
+}
+
+.nav-link:active {
+    text-decoration: underline;
 }
 
 /* home */
@@ -42,7 +47,7 @@ header {
     color: white;
 }
 
-#home button {
+#myButton {
     display: block;
     justify-content: center;
     margin: 50px auto;
@@ -50,6 +55,8 @@ header {
     font-family: "Poppins", sans-serif;
     font-size: 1.5em;
     border-radius: 35px;
+    padding: 10px 30px;
+    border: none;
     color: white;
     background: rgb(50, 6, 46);
     background: linear-gradient(90deg, rgba(50, 6, 46, 1) 0%, rgba(132, 174, 187, 1) 50%, rgba(22, 133, 120, 1) 100%);
@@ -57,33 +64,237 @@ header {
 
 /* EM ALTA */
 
-.trending h1 {
-    color: white;
-    font-size: 30px;
+/* FILMES */
+
+#trendingMovies {
+    overflow: auto;
+}
+
+#trendingMovies::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+#trendingMovies::-webkit-scrollbar-thumb {
+    background: #8f8b8f;
+    border-radius: 10px;
+}
+
+#trendingMovies::-webkit-scrollbar-thumb:hover {
+    background: #777577;
+}
+
+#trendingMovies::-webkit-scrollbar-track {
+    background: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
 
 .movieCard {
-    padding: 5px;
+    margin: 0 20px 20px;
+    border-radius: 20px;
 }
 
 .movieCard>img {
     border-radius: 20px;
+    margin-top: 10px;
 }
 
-.movieCard>h4 {
-    margin-top: 15px;
-    color: white;
+/* FIM FILMES */
+
+/* SERIES */
+
+#trendingShows {
+    overflow: auto;
+}
+
+#trendingShows::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+#trendingShows::-webkit-scrollbar-thumb {
+    background: #8f8b8f;
+    border-radius: 10px;
+}
+
+#trendingShows::-webkit-scrollbar-thumb:hover {
+    background: #777577;
+}
+
+#trendingShows::-webkit-scrollbar-track {
+    background: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
 
 .tvCard {
-    padding: 5px;
+    margin: 0 20px 20px;
+    border-radius: 20px;
 }
 
 .tvCard>img {
     border-radius: 20px;
 }
 
-.tvCard>h4 {
-    margin-top: 15px;
+/* FIM SERIES */
+/* Descobrir */
+
+#descobrir {
+    background: linear-gradient(90deg, rgba(114, 99, 142, 1) 0%, rgba(75, 92, 98, 1) 38%, rgba(40, 85, 58, 1) 93%);
+    border-radius: 40px;
+    max-width: 70%;
+    min-height: 400px;
+    margin-top: 200px;
+    margin: auto;
+}
+
+#descobrir .genero {
+    display: block;
+    text-align: center;
+}
+
+#descobrir .genero label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.7em;
     color: white;
 }
+
+#descobrir .genero select,
+option {
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* CHECKBOX */
+
+#descobrir .checkboxes {
+    display: flex;
+    background: none;
+    padding-top: 40px;
+    margin-left: 55px;
+}
+
+#descobrir .checkboxes input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#descobrir .checkboxes label {
+    text-align: center;
+    padding-left: 50px;
+    margin-right: 50px;
+    display: block;
+    position: relative;
+}
+
+#descobrir .checkmark {
+    position: absolute;
+    top: 17%;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #38eccc;
+    border-radius: 5px;
+}
+
+#descobrir .checkboxes label:hover input~.checkmark {
+    background-color: #33c2a8;
+}
+
+#descobrir .checkmark input:checked~.checkmark {
+    background-color: #38eccc;
+}
+
+#descobrir .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#descobrir .checkboxes label input:checked~.checkmark:after {
+    display: block;
+}
+
+#descobrir .checkboxes .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 7px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+#discoverMov img {
+    border-radius: 10px;
+}
+
+#discoverMov p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* INICIO FILMES EM CARTAZ */
+
+#em-cartaz {
+    color: #fff;
+}
+
+#em-cartaz img {
+    border-radius: 7px;
+    border: 2px solid #fff;
+    text-align: center;
+}
+
+#em-cartaz p {
+    font-size: 22px;
+}
+
+#em-cartaz h3 {
+    margin-top: 50px;
+}
+
+.filme-box {
+    display: block !important;
+}
+
+/* FIM FILMES EM CARTAZ */
+
+
+
+/* INICIO FILMES EM ALTA */
+
+#em-alta {
+    color: white;
+}
+
+.em-alta-box {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    max-width: fit-content;
+}
+
+.em-alta-box img {
+    border-radius: 10px;
+}
+
+.em-alta-box p {
+    padding-top: 20px;
+    font-size: 19px;
+    vertical-align: middle;
+}
+
+/* FIM FILMES EM ALTA */
