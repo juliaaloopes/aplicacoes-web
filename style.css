@@ -77,6 +77,18 @@ body {
     margin-left: 0px !important;
 }
 
+#home-filmes a,
+#home-series a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#home-filmes a:hover,
+#home-series a:hover {
+    text-decoration: none;
+    color: #38eccc;
+}
+
 /* SERIES */
 
 #trendingShows {
