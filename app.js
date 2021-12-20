@@ -150,6 +150,6 @@ document.getElementById('myButton').onclick = () => {
   }
 
   if (checkMovie && checkSerie == true) {
-    alert("Choose 1 only one")
+    alert("Selecione apenas 1 (um).")
   }
 }
