@@ -30,7 +30,7 @@ body {
     border: none;
     color: white;
     background: rgb(50, 6, 46);
-    background: linear-gradient(90deg, rgba(50, 6, 46, 1) 0%, rgba(132, 174, 187, 1) 50%, rgba(22, 133, 120, 1) 100%);
+    background: #33c2a8;
 }
 
 /* EM ALTA */
@@ -126,7 +126,6 @@ body {
 
 /* FIM SERIES */
 
-#escolha {}
 
 /* Descobrir */
 
