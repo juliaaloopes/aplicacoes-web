@@ -114,6 +114,7 @@ body {
 
 /* FIM SERIES */
 
+#escolha {}
 
 /* Descobrir */
 
@@ -272,3 +273,10 @@ option {
 }
 
 /* FIM FILMES EM ALTA */
+
+
+@media (max-width: 600px) {
+    #escolha {
+        width: 120px;
+    }
+}
