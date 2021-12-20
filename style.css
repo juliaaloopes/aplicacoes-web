@@ -73,6 +73,10 @@ body {
 
 /* FIM FILMES */
 
+#escolha {
+    margin-left: 0px !important;
+}
+
 /* SERIES */
 
 #trendingShows {
@@ -124,6 +128,7 @@ body {
 #descobrir .genero {
     display: block;
     text-align: center;
+    margin-left: 2px;
 }
 
 #descobrir .genero label {
@@ -136,8 +141,6 @@ body {
 option {
     background-color: white;
     border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 10px;
     margin-left: 20px;
     text-align: center;
     font-size: 1.2em;
@@ -148,7 +151,7 @@ option {
 #descobrir .checkboxes {
     display: flex;
     background: none;
-    padding-top: 40px;
+    padding-top: 30px;
     margin-left: 55px;
 }
 

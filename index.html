@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css"/>
-    <title>ROULETTE FLIX</title>
+    <title>ROULETTEFLIX</title>
     
   </head>
 
@@ -25,7 +25,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">ROULETTE FLIX</a>
+          <a class="navbar-brand" href="./index.html">ROULETTEFLIX</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,20 +54,25 @@
         </div>
         <div class="row text-center mt-4 mx-auto" id="descobrir">
           <div class="col genero p-5 text-center">
-            <form class="justify-content-center" action="">
+            <form class="d-block justify-content-center" action="">
               <label for="cars">GÊNERO</label>
-              <select name="escolha" id="escolha">
-                  <option value="1">Terror</option>
+              <select class="" name="escolha" id="escolha">
+                  <option value="selected">Selecione</option>
+                  <option value="Horror">Terror</option>
                   <option value="Comedy">Comédia</option>
                   <option value="Animation">Animação</option>
-                  <option value="4">Aventura</option>
-                  <option value="5">Drama</option>
-                  <option value="6">Ação</option>
+                  <option value="Adventure">Aventura</option>
+                  <option value="Drama">Drama</option>
+                  <option value="Action">Ação</option>
+                  <option value="Thriler">Suspense</option>
+                  <option value="Crime">Crime</option>
+                  <option value="Documentary">Documentário</option>
+                  <option value="Romance">Romance</option>
+                  <option value="Romance">Romance</option>
               </select>
             </form>
 
             <div class="row text-center checkboxes">
-     
               <label for="serie">
                   <input type="checkbox" id="serie" name="serie">SÉRIE
                   <span class="checkmark"></span>
@@ -76,7 +81,6 @@
                   <input type="checkbox" id="filmes" name="filmes">FILME
                   <span class="checkmark"></span>
               </label>
-    
             </div>
             
             <div class="row mt-5">
